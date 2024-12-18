@@ -16,7 +16,9 @@ app.use(bodyParser.json());
 
 app.use('/api', otpRoutes);
 
-
+app.get("/",(req,res)=>{
+    res.send("Hello world")
+});
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
